@@ -1,0 +1,130 @@
+/*!
+* jQuery Mobile Datepicker Wrapper 1.4.2
+http://uglymongrel.com.com
+*
+* Copyright Alexander Schmitz and other contributors
+* Released under the MIT license.
+* http://uglymongrel.com.org/license
+*
+*/
+
+/* Globals */
+.ui-datepicker,
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev {
+	/* ui-shadow */
+	-webkit-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ rgba(0,0,0,.15) /*{global-box-shadow-color}*/;
+	-moz-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ rgba(0,0,0,.15) /*{global-box-shadow-color}*/;
+	box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ rgba(0,0,0,.15) /*{global-box-shadow-color}*/;
+}
+/* Swatches */
+/* A
+-----------------------------------------------------------------------------------------------------------*/
+html .ui-overlay-a .ui-datepicker td span,
+html .ui-overlay-a .ui-datepicker a,
+html .ui-body-a .ui-datepicker td span,
+html .ui-body-a .ui-datepicker a,
+.ui-page-theme-a .ui-datepicker td span,
+.ui-page-theme-a .ui-datepicker a {
+	/* ui-btn-a */
+	background-color: #f6f6f6 /*{a-bup-background-color}*/;
+	border-color: #ddd /*{a-bup-border}*/;
+	color: #333 /*{a-bup-color}*/;
+	text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #f3f3f3 /*{a-bup-shadow-color}*/;
+}
+html body .ui-page-theme-a .ui-datepicker .ui-state-highlight {
+	/* ui-btn-down */
+	background-color: #e8e8e8 /*{a-bdown-background-color}*/;
+	border-color: #ddd /*{a-bdown-border}*/;
+	color: #333 /*{a-bdown-color}*/;
+	text-shadow: 0 /*{a-bdown-shadow-x}*/ 1px /*{a-bdown-shadow-y}*/ 0 /*{a-bdown-shadow-radius}*/ #f3f3f3 /*{a-bdown-shadow-color}*/;
+}
+html body .ui-page-theme-a .ui-datepicker .ui-state-active {
+	/* ui-btn-active */
+	background-color: #3388cc /*{a-active-background-color}*/;
+	border-color: #3388cc /*{a-active-border}*/;
+	color: #fff /*{a-active-color}*/;
+	text-shadow: 0 /*{a-active-shadow-x}*/ 1px /*{a-active-shadow-y}*/ 0 /*{a-active-shadow-radius}*/ #005599 /*{a-active-shadow-color}*/;
+}
+.ui-page-theme-a .ui-datepicker td,
+.ui-page-theme-a .ui-datepicker .ui-datepicker-header {
+	/* ui-body-a */
+	border-color: #ddd /*{a-body-border}*/;
+	background-color: #fff /*{a-body-background-color}*/;
+	color: #333 /*{a-body-color}*/;
+	text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #f3f3f3 /*{a-body-shadow-color}*/;
+}
+
+.ui-bar-a,
+.ui-page-theme-a .ui-bar-inherit,
+html .ui-bar-a .ui-bar-inherit,
+html .ui-body-a .ui-bar-inherit,
+html body .ui-group-theme-a .ui-bar-inherit,
+.ui-page-theme-a .ui-datepicker th {
+	/* ui-bar-a */
+	background-color: #e9e9e9 /*{a-bar-background-color}*/;
+	border-color: #ddd /*{a-bar-border}*/;
+	color: #333 /*{a-bar-color}*/;
+	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #eee /*{a-bar-shadow-color}*/;
+	font-weight: bold;
+}
+
+
+
+/* Swatches */
+/* B
+-----------------------------------------------------------------------------------------------------------*/
+html .ui-overlay-b .ui-datepicker td span,
+html .ui-overlay-b .ui-datepicker a,
+html .ui-body-b .ui-datepicker td span,
+html .ui-body-b .ui-datepicker a,
+.ui-page-theme-b .ui-datepicker td span,
+.ui-page-theme-b .ui-datepicker a {
+	/* ui-btn-a */
+	background-color: #333 /*{a-bup-background-color}*/;
+	border-color: #1f1f1f /*{a-bup-border}*/;
+	color: #fff /*{a-bup-color}*/;
+	text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #f3f3f3 /*{a-bup-shadow-color}*/;
+}
+html body .ui-page-theme-b .ui-datepicker .ui-state-highlight {
+	/* ui-btn-down */
+	background-color: #404040 /*{a-bdown-background-color}*/;
+	border-color: #1f1f1f /*{a-bdown-border}*/;
+	color: #fff /*{a-bdown-color}*/;
+	text-shadow: 0 /*{a-bdown-shadow-x}*/ 1px /*{a-bdown-shadow-y}*/ 0 /*{a-bdown-shadow-radius}*/ #f3f3f3 /*{a-bdown-shadow-color}*/;
+}
+html body .ui-page-theme-b .ui-datepicker .ui-state-active {
+	/* ui-btn-active */
+	background-color: #22aadd /*{a-active-background-color}*/;
+	border-color: #22aadd /*{a-active-border}*/;
+	color: #fff /*{a-active-color}*/;
+	text-shadow: 0 /*{a-active-shadow-x}*/ 1px /*{a-active-shadow-y}*/ 0 /*{a-active-shadow-radius}*/ #005599 /*{a-active-shadow-color}*/;
+}
+.ui-datepicker td,
+.ui-datepicker .ui-datepicker-header {
+	/* ui-body-b */
+	border-color: #1d1d1d /*{a-body-border}*/;
+	background-color: #2a2a2a /*{a-body-background-color}*/;
+	color: #fff /*{a-body-color}*/;
+	text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #f3f3f3 /*{a-body-shadow-color}*/;
+}
+
+.ui-datepicker th {
+	/* ui-bar-a */
+	background-color: #1d1d1d /*{a-bar-background-color}*/;
+	border-color: #1b1b1b /*{a-bar-border}*/;
+	color: #fff /*{a-bar-color}*/;
+	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #eee /*{a-bar-shadow-color}*/;
+	font-weight: bold;
+}
+/* Button hover */
+.ui-page-theme-a .ui-btn:hover,
+html .ui-bar-a .ui-btn:hover,
+html .ui-body-a .ui-btn:hover,
+html body .ui-group-theme-a .ui-btn:hover,
+html head + body .ui-btn.ui-btn-a:hover {
+	background-color: 			#373737 /*{b-bhover-background-color}*/;
+	border-color:	 		#1f1f1f /*{b-bhover-border}*/;
+	color: 					#fff /*{b-bhover-color}*/;
+	text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #f3f3f3 /*{a-bhover-shadow-color}*/;
+}
